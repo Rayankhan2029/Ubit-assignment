@@ -1,0 +1,23 @@
+public class lab06 {
+    public static void main(String[] args) {
+        // Example array
+        int[] numbers = {5, 12, 7, 20, 3, 8};
+
+        // Counters for even and odd numbers
+        int evenCount = 0;
+        int oddCount = 0;
+
+        // Loop through the array
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 == 0) {
+                evenCount++; // Increment even counter
+            } else {
+                oddCount++; // Increment odd counter
+            }
+        }
+
+        // Print the counts
+        System.out.println("Number of even numbers: " + evenCount);
+        System.out.println("Number of odd numbers: " + oddCount);
+    }
+}
