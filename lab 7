@@ -1,0 +1,27 @@
+public class lab07 {
+    public static void main(String[] args) {
+        // Example array
+        int[] numbers = {5, 12, 7, 20, 3, 8};
+        
+        // Target number to search
+        int target = 20;
+
+        // Variable to store the index if found
+        int index = -1;
+
+        // Loop through the array
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] == target) {
+                index = i; // store the index
+                break;     // stop the loop once found
+            }
+        }
+
+        // Print result
+        if (index != -1) {
+            System.out.println("Target found at index: " + index);
+        } else {
+            System.out.println("Target not found in the array");
+        }
+    }
+}
