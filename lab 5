@@ -1,0 +1,19 @@
+public class lab05 {
+    public static void main(String[] args) {
+        // Example array
+        int[] numbers = {5, 12, 7, 20, 3};
+
+        // Assume the first element is the largest
+        int largest = numbers[0];
+
+        // Loop through the array
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > largest) {
+                largest = numbers[i]; // Update largest if current number is bigger
+            }
+        }
+
+        // Print the largest number
+        System.out.println("The largest number in the array is: " + largest);
+    }
+}
